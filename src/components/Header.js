@@ -6,24 +6,20 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { FaHome } from "react-icons/fa";
+import styles from '../../styles/Header.module.css'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { render } from 'react-dom';
 
 
 export default function ButtonAppBar() {
-  return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">Arquitetura</Button>
-          <Button color="inherit">Serviços</Button>
-          <h1><FaHome/> </h1>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Renovate
-          </Typography>
-          <Button color="inherit">Comentários</Button>
-          <Button color="inherit">Contatos</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
+ 
+  return(
+    <div className= {styles.nav}>
+      <AnchorLink href='#home' >Home</AnchorLink>
+      <AnchorLink href='#arquitetura' >Arquitetura</AnchorLink>
+      <AnchorLink href='#serviços' >Serviços</AnchorLink>
+      <AnchorLink href='#comentarios' >Comentários</AnchorLink>
+    </div>
+    
   );
-}
+ }

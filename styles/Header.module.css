@@ -1,0 +1,40 @@
+.box{
+    background-color: #FFF;
+    color: red;
+    font-size: 20px
+    
+    
+
+};
+
+.box:hover{
+    background-color: green;
+    color:red;
+}
+
+.btn{
+    background-color: #FFF;
+    color: red
+    
+
+};
+
+.btnMenu{
+    font-size: 8px;
+}
+
+@media screen and (max-width: 480px ){
+    
+}
+
+@media screen and (min-width:481px) and (max-width: 768px ){
+
+}
+
+@media screen and (min-width:769px) and (max-width: 1199px ){
+
+}
+
+@media screen and (min-width: 1200px ){
+    
+}
