@@ -1,3 +1,4 @@
+
 .box{
     background-color: #FFF;
     color: red;
@@ -23,18 +24,92 @@
     font-size: 8px;
 }
 
-@media screen and (max-width: 480px ){
+
+
+.nav {
+    padding-top: 30px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    position:static;
+    text-decoration: none; 
+    font-size:large;
+    font-weight: 400; 
+    text-transform: uppercase;
+    color: #000;
+    text-align: center; 
+    padding: 10px 0px 10px 0px;
+    border-radius: 40px;
     
+    
+}
+
+.nav a:hover {
+    background: #87e587;
+    color: #fff;
+}
+
+.nav  h3{
+    color: #87e587;
+    
+    font-size: 30px;
+    margin:30px 30px 0 30px ;    
+}
+
+.nav h5{
+    margin-top: 0;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 480px ){
+    .nav{
+        display: none;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .nav a {
+        width: 100%; 
+    }
 }
 
 @media screen and (min-width:481px) and (max-width: 768px ){
-
+    .nav{
+        display: none;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .nav a {
+        width: 100%; 
+        
+    }
 }
 
 @media screen and (min-width:769px) and (max-width: 1199px ){
-
+    .nav{
+        display: flex;
+        
+    }
+    .nav a {
+        width: 10%; 
+       
+    }
 }
 
 @media screen and (min-width: 1200px ){
-    
+    .nav{
+        display: flex;
+        
+    }
+    .nav a {
+        width: 10%; 
+        
+    }
 }

@@ -1,5 +1,5 @@
 import Header from '../components/Header'
-import styles from '../../styles/Header.module.css'
+
 
 const  Default = ({ children }) => {
 
